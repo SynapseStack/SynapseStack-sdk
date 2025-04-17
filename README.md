@@ -1,14 +1,14 @@
 
 
-## 📦 `SynapseStack-sdk` – README.md
+## 📦 `SynapseStack-sdk`
 
-# 🔌 inferix-sdk
+# 🔌 SynapseStack-sdk
 
-The official SDK for interacting with **Inferix**, the modular AI agent platform by [SynapseStack](https://github.com/synapsestack). This SDK allows developers to easily connect, submit tasks, and receive responses from multiple AI agents handling tasks like summarization, code generation, image analysis, and more.
+The official SDK for interacting with **SynapseStack**, the modular AI agent platform by [SynapseStack](https://github.com/synapsestack). This SDK allows developers to easily connect, submit tasks, and receive responses from multiple AI agents handling tasks like summarization, code generation, image analysis, and more.
 
 ## ✨ Features
 
-- Unified API for accessing various Inferix agents
+- Unified API for accessing various SynapseStack agents
 - Supports Python and JavaScript
 - Async + sync client support
 - Built-in error handling and logging
@@ -21,13 +21,13 @@ The official SDK for interacting with **Inferix**, the modular AI agent platform
 ### Python
 
 ```bash
-pip install inferix-sdk
+pip install SynapseStack-sdk
 ```
 
 ### JavaScript / TypeScript
 
 ```bash
-npm install @inferix/sdk
+npm install @SynapseStack/sdk
 ```
 
 ---
@@ -37,9 +37,9 @@ npm install @inferix/sdk
 ### Python
 
 ```python
-from inferix import InferixClient
+from SynapseStack import SynapseStackClient
 
-client = InferixClient(api_key="your_api_key")
+client = SynapseStackClient(api_key="your_api_key")
 
 result = client.summarize("This is a long document...")
 print(result)
@@ -48,9 +48,9 @@ print(result)
 ### JavaScript
 
 ```js
-import { InferixClient } from "@inferix/sdk";
+import { SynapseStackClient } from "@SynapseStack/sdk";
 
-const client = new InferixClient("your_api_key");
+const client = new SynapseStackClient("your_api_key");
 
 const result = await client.summarize("This is a long document...");
 console.log(result);
@@ -61,16 +61,16 @@ console.log(result);
 ## 📂 Project Structure
 
 ```bash
-inferix-sdk/
+SynapseStack-sdk/
 ├── python/
-│   ├── inferix/
+│   ├── SynapseStack/
 │   │   ├── __init__.py
 │   │   └── client.py           # Core Python SDK
 │   ├── setup.py
 │   └── pyproject.toml
 ├── js/
 │   ├── src/
-│   │   └── inferixClient.js    # Core JavaScript SDK
+│   │   └── SynapseStackClient.js    # Core JavaScript SDK
 │   ├── package.json
 │   └── tsconfig.json           # (optional for TypeScript support)
 ├── examples/
